@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+            minWidth="-Infinity"
+            prefHeight="450.0" prefWidth="750.0" style="-fx-background-color: #DECEEB;"
+            xmlns="http://javafx.com/javafx/11.0.1" fx:controller="controllers.admin.ManagePositionsController">
+    <Button alignment="CENTER" layoutX="512.0" layoutY="272.0" mnemonicParsing="false" onAction="#reset"
+            prefHeight="28.0" prefWidth="74.0" style="-fx-background-color: #6b27a7;" text="Reset"
+            textAlignment="CENTER" textFill="WHITE" AnchorPane.leftAnchor="512.0" AnchorPane.topAnchor="272.0">
+        <font>
+            <Font name="System Bold" size="12.0"/>
+        </font>
+    </Button>
+    <Button fx:id="addButton" alignment="CENTER" layoutX="631.0" layoutY="272.0" mnemonicParsing="false" onAction="#add"
+            prefHeight="28.0" prefWidth="74.0" style="-fx-background-color: #6b27a7;" text="Add" textFill="WHITE"
+            AnchorPane.leftAnchor="631.0" AnchorPane.topAnchor="272.0">
+        <font>
+            <Font name="System Bold" size="12.0"/>
+        </font>
+    </Button>
+    <TableView fx:id="table" layoutX="8.0" layoutY="9.0" onMouseEntered="#getFocus" onMouseExited="#leaveFocus"
+               prefHeight="433.0" prefWidth="460.0" style="-fx-border-color: #6b27a7;" AnchorPane.bottomAnchor="8.0"
+               AnchorPane.leftAnchor="8.0" AnchorPane.topAnchor="9.0">
+        <columns>
+            <TableColumn fx:id="id" prefWidth="115.19997882843018" resizable="false"
+                         style="-fx-alignment: center; -fx-background-color: #DECEEB;" text="Position ID"/>
+            <TableColumn fx:id="name" prefWidth="211.20008850097656" resizable="false" sortable="false"
+                         style="-fx-alignment: center; -fx-background-color: #DECEEB;" text="Position Name"/>
+            <TableColumn fx:id="hyperlink" prefWidth="132.0" resizable="false" sortable="false"
+                         style="-fx-alignment: center; -fx-background-color: #DECEEB;" text="Action"/>
+        </columns>
+        <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY"/>
+        </columnResizePolicy>
+    </TableView>
+    <Label alignment="CENTER" layoutX="480.0" layoutY="32.0" prefHeight="25.0" prefWidth="200.0" text="New Position"
+           textFill="#6b27a7" AnchorPane.leftAnchor="514.0">
+        <font>
+            <Font name="OCR A Extended" size="25.0"/>
+        </font>
+    </Label>
+    <JFXTextField fx:id="positionID" focusColor="#6b27a7" layoutX="572.0" layoutY="155.0" prefHeight="20.0"
+                  prefWidth="150.0" promptText="Enter Position ID" AnchorPane.leftAnchor="574.0"/>
+    <JFXTextField fx:id="positionName" focusColor="#6b27a7" layoutX="572.0" layoutY="205.0" prefHeight="20.0"
+                  prefWidth="150.0" promptText="Enter Position Name" AnchorPane.leftAnchor="574.0"/>
+    <Label alignment="CENTER" layoutX="465.0" layoutY="159.0" prefHeight="20.0" prefWidth="60.0" text="ID:"
+           textFill="#6b27a7" AnchorPane.leftAnchor="500.0">
+        <font>
+            <Font name="System Bold" size="12.0"/>
+        </font>
+    </Label>
+    <Label alignment="CENTER" layoutX="465.0" layoutY="209.0" prefHeight="20.0" prefWidth="60.0" text="Name:"
+           textFill="#6b27a7" AnchorPane.leftAnchor="500.0">
+        <font>
+            <Font name="System Bold" size="12.0"/>
+        </font>
+    </Label>
+</AnchorPane>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+            prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1"
+            fx:controller="controllers.voter.VoterLoginController">
+    <Label alignment="CENTER" layoutX="229.0" layoutY="22.0" onMouseClicked="#fill" prefHeight="39.0" prefWidth="126.0"
+           text="Voter" textFill="#ff6f00">
+        <font>
+            <Font name="System Bold" size="27.0"/>
+        </font>
+        <graphic>
+            <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                <Image url="@../../media/voter/voter_login_icon.png"/>
+            </ImageView>
+        </graphic>
+    </Label>
+    <Label layoutX="53.0" layoutY="119.0" prefHeight="27.0" prefWidth="107.0" text="CNIC No : " textFill="#57667c">
+        <font>
+            <Font name="System Bold" size="18.0"/>
+        </font>
+    </Label>
+    <JFXTextField fx:id="cnic" focusColor="#fd7037" layoutX="160.0" layoutY="119.0" prefHeight="26.0"
+                  prefWidth="321.0"/>
+    <Label layoutX="53.0" layoutY="201.0" prefHeight="27.0" prefWidth="107.0" text="Password : " textFill="#57667c">
+        <font>
+            <Font name="System Bold" size="18.0"/>
+        </font>
+    </Label>
+    <JFXPasswordField fx:id="password" focusColor="#ff6f00" layoutX="160.0" layoutY="201.0" prefHeight="26.0"
+                      prefWidth="322.0"/>
+    <Button layoutX="237.0" layoutY="276.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="167.0"
+            style="-fx-background-color: #FF6F00;" text="Login" textFill="WHITE">
+        <font>
+            <Font name="System Bold" size="15.0"/>
+        </font>
+    </Button>
+    <JFXButton fx:id="btnLogin" layoutX="237.0" layoutY="276.0" onAction="#login" prefHeight="31.0" prefWidth="167.0"
+               ripplerFill="WHITE" text=" ">
+        <cursor>
+            <Cursor fx:constant="HAND"/>
+        </cursor>
+    </JFXButton>
+    <Pane layoutY="347.0" prefHeight="53.0" prefWidth="600.0" style="-fx-background-color: #dbdad7;"
+          AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+          AnchorPane.topAnchor="347.0">
+        <Label layoutX="244.0" layoutY="18.0" text="Not Already Registered?" textFill="#57667c">
+            <font>
+                <Font name="Arial Rounded MT Bold" size="14.0"/>
+            </font>
+        </Label>
+        <Button layoutX="434.0" layoutY="12.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="152.0"
+                style="-fx-background-color: #00bc38;" text="Register Here" textAlignment="CENTER" textFill="#f0f0f0">
+            <font>
+                <Font name="System Bold" size="13.0"/>
+            </font>
+        </Button>
+        <JFXButton layoutX="434.0" layoutY="11.0" onAction="#registerVoter" prefHeight="31.0" prefWidth="152.0"
+                   ripplerFill="WHITE" text=" ">
+            <cursor>
+                <Cursor fx:constant="HAND"/>
+            </cursor>
+        </JFXButton>
+    </Pane>
+</AnchorPane>

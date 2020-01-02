@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="450.0" prefWidth="750.0"
+            xmlns="http://javafx.com/javafx/11.0.1" fx:controller="controllers.voter.VoterRegisterController">
+    <Pane prefHeight="83.0" prefWidth="750.0" style="-fx-background-color: #0aca00;" AnchorPane.bottomAnchor="367.0"
+          AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <children>
+            <Label layoutX="143.0" layoutY="20.0" prefHeight="44.0" prefWidth="465.0" text="Voter Registration"
+                   textFill="WHITE">
+                <font>
+                    <Font name="OCR A Extended" size="42.0"/>
+                </font>
+            </Label>
+        </children>
+    </Pane>
+
+    <Label layoutX="21.0" layoutY="150.0" prefHeight="30.0" prefWidth="106.0" text="Name" textFill="#57667c"
+           AnchorPane.leftAnchor="21.0">
+        <font>
+            <Font name="Arial Rounded MT Bold" size="17.0"/>
+        </font>
+    </Label>
+    <JFXTextField fx:id="name" focusColor="#19cf12" layoutX="200.0" layoutY="150.0" prefHeight="30.0" prefWidth="230.0"
+                  promptText="Name" AnchorPane.leftAnchor="190.0"/>
+    <Label layoutX="21.0" layoutY="225.0" prefHeight="30.0" prefWidth="106.0" text="CNIC" textFill="#57667c">
+        <font>
+            <Font name="Arial Rounded MT Bold" size="17.0"/>
+        </font>
+    </Label>
+    <JFXTextField fx:id="cnic" focusColor="#19cf12" layoutX="200.0" layoutY="225.0" prefHeight="30.0" prefWidth="230.0"
+                  promptText="e.g 3110243396671" AnchorPane.leftAnchor="190.0"/>
+    <Label layoutX="21.0" layoutY="300.0" prefHeight="30.0" prefWidth="106.0" text="Password" textFill="#57667c">
+        <font>
+            <Font name="Arial Rounded MT Bold" size="17.0"/>
+        </font>
+    </Label>
+    <JFXPasswordField fx:id="pass1" focusColor="#19cf12" layoutX="200.0" layoutY="300.0" prefHeight="30.0"
+                      prefWidth="230.0" promptText="Password" AnchorPane.leftAnchor="190.0"/>
+    <Label layoutX="21.0" layoutY="375.0" prefHeight="30.0" prefWidth="163.0" text="Confirm Password"
+           textFill="#57667c">
+        <font>
+            <Font name="Arial Rounded MT Bold" size="17.0"/>
+        </font>
+    </Label>
+    <JFXPasswordField fx:id="pass2" focusColor="#19cf12" layoutX="200.0" layoutY="375.0" prefHeight="30.0"
+                      prefWidth="230.0" promptText="Re-Enter Password" AnchorPane.leftAnchor="190.0"/>
+    <Button alignment="CENTER" layoutX="526.0" layoutY="208.0" mnemonicParsing="false" onAction="#register"
+            prefHeight="150.0" prefWidth="150.0" style="-fx-background-color: #00bc38;" text="Register"
+            textFill="WHITE">
+        <font>
+            <Font name="System Bold" size="16.0"/>
+        </font>
+    </Button>
+    <JFXButton layoutX="526.0" layoutY="208.0" onAction="#register" prefHeight="150.0" prefWidth="150.0"
+               ripplerFill="#0aca00" text=" ">
+        <cursor>
+            <Cursor fx:constant="HAND"/>
+        </cursor>
+    </JFXButton>
+</AnchorPane>

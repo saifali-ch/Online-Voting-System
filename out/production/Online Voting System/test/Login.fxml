@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="400.0" prefWidth="705.0"
+            style="-fx-background-color: #E0E5EC;" xmlns="http://javafx.com/javafx/11.0.1"
+            fx:controller="test.LoginController">
+    <TextField fx:id="back" layoutX="242.0" layoutY="147.0" prefHeight="30.0" prefWidth="300.0"
+               style="-fx-background-color: #E0E5EC;">
+        <font>
+            <Font size="14.0"/>
+        </font>
+        <effect>
+            <DropShadow color="#ffffff80" offsetX="-6.0" offsetY="-6.0" spread="0.15"/>
+        </effect>
+    </TextField>
+    <TextField fx:id="username" layoutX="241.0" layoutY="147.0" prefHeight="30.0" prefWidth="300.0"
+               promptText=" Username or Email" style="-fx-background-color: #E0E5EC;">
+        <font>
+            <Font size="14.0"/>
+        </font>
+        <effect>
+            <DropShadow color="#a3b0c499" offsetX="6.0" offsetY="6.0" spread="0.15"/>
+        </effect>
+    </TextField>
+    <Label layoutX="14.0" layoutY="14.0" prefHeight="54.0" prefWidth="435.0" text="Login to your Account"
+           textFill="#a2b1c6" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="14.0">
+        <font>
+            <Font size="27.0"/>
+        </font>
+    </Label>
+    <Button fx:id="back" layoutX="316.0" layoutY="285.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="150.0"
+            style="-fx-background-color: #E0E5EC;" textFill="WHITE">
+        <effect>
+            <DropShadow color="#ffffff80" height="20.77" offsetX="-9.0" offsetY="-9.0" radius="17.035" spread="0.06"
+                        width="49.37"/>
+        </effect>
+    </Button>
+    <Button layoutX="316.0" layoutY="285.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="150.0"
+            style="-fx-background-color: #E0E5EC;">
+        <effect>
+            <DropShadow color="#a3b1c699" offsetX="6.0" offsetY="6.0" radius="13.575" width="35.3"/>
+        </effect>
+    </Button>
+    <JFXButton fx:id="btnLogin" layoutX="316.0" layoutY="285.0" onAction="#login" prefHeight="40.0" prefWidth="150.0"
+               ripplerFill="WHITE" text="Login" textFill="#77828fad">
+        <font>
+            <Font name="OCR A Extended" size="22.0"/>
+        </font>
+    </JFXButton>
+    <PasswordField fx:id="back" layoutX="241.0" layoutY="225.0" prefHeight="30.0" prefWidth="300.0"
+                   style="-fx-background-color: #E0E5EC;">
+        <effect>
+            <DropShadow color="#ffffff80" offsetX="-6.0" offsetY="-6.0" spread="0.15"/>
+        </effect>
+    </PasswordField>
+    <PasswordField layoutX="241.0" layoutY="225.0" prefHeight="30.0" prefWidth="300.0" promptText="Password"
+                   style="-fx-background-color: #E0E5EC;">
+        <effect>
+            <DropShadow color="#a3b0c499" offsetX="6.0" offsetY="6.0" spread="0.15"/>
+        </effect>
+    </PasswordField>
+    <Label layoutX="140.0" layoutY="147.0" text="Username" textFill="#a2b1c6">
+        <font>
+            <Font name="OCR A Extended" size="17.0"/>
+        </font>
+    </Label>
+    <Label layoutX="140.0" layoutY="225.0" text="Password" textFill="#a2b1c6">
+        <font>
+            <Font name="OCR A Extended" size="17.0"/>
+        </font>
+    </Label>
+    <Button fx:id="back1" layoutX="535.0" layoutY="346.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="150.0"
+            style="-fx-background-color: #E0E5EC;" textFill="WHITE">
+        <effect>
+            <InnerShadow choke="0.21" color="#8a848447" height="25.77" offsetX="-6.0" offsetY="-6.0" width="16.23"/>
+        </effect>
+    </Button>
+    <Button layoutX="535.0" layoutY="346.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="150.0"
+            style="-fx-background-color: #E0E5EC;" text="SignUp" textFill="#77828fac">
+        <effect>
+            <InnerShadow color="#a3b0c499" offsetX="6.0" offsetY="6.0"/>
+        </effect>
+        <font>
+            <Font name="OCR A Extended" size="22.0"/>
+        </font>
+    </Button>
+    <JFXButton fx:id="btnLogin1" layoutX="535.0" layoutY="346.0" onAction="#login" prefHeight="40.0" prefWidth="150.0"
+               ripplerFill="WHITE" text=" " textFill="#a2b1c6">
+        <font>
+            <Font name="OCR A Extended" size="22.0"/>
+        </font>
+    </JFXButton>
+    <Slider fx:id="back" blockIncrement="0.0" layoutX="350.0" layoutY="79.0" majorTickUnit="1.0" max="1.0"
+            minorTickCount="1" prefHeight="30.0" prefWidth="60.0" style="-fx-background-color: #E0E5EC;">
+        <effect>
+            <DropShadow color="#ffffff80" offsetX="-6.0" offsetY="-6.0" spread="0.33"/>
+        </effect>
+    </Slider>
+    <Slider blockIncrement="20.0" layoutX="350.0" layoutY="79.0" prefHeight="30.0" prefWidth="60.0"
+            style="-fx-background-color: #E0E5EC;">
+        <effect>
+            <DropShadow color="#a3b0c499" offsetX="6.0" offsetY="6.0" spread="0.42"/>
+        </effect>
+    </Slider>
+    <Label layoutX="278.0" layoutY="84.0" text="Admin" textFill="#a2b1c6">
+        <font>
+            <Font name="OCR A Extended" size="17.0"/>
+        </font>
+    </Label>
+    <Label layoutX="428.0" layoutY="84.0" text="User" textFill="#a2b1c6">
+        <font>
+            <Font name="OCR A Extended" size="17.0"/>
+        </font>
+    </Label>
+    <ToggleButton layoutX="582.0" layoutY="28.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="170.0"
+                  style="-fx-background-color: #E0E5EC;" text="Forget Password?" AnchorPane.leftAnchor="510.0">
+        <effect>
+            <DropShadow color="#a3b0c499" offsetX="6.0" offsetY="6.0" spread="0.39"/>
+        </effect>
+    </ToggleButton>
+    <ToggleButton fx:id="back" layoutX="582.0" layoutY="28.0" mnemonicParsing="false" prefHeight="30.0"
+                  prefWidth="170.0" style="-fx-background-color: #E0E5EC;" text="Forget Password?" textFill="#a2b1c6"
+                  AnchorPane.leftAnchor="510.0">
+        <effect>
+            <DropShadow color="#ffffff80" offsetX="-6.0" offsetY="-6.0" spread="0.39"/>
+        </effect>
+        <font>
+            <Font name="OCR A Extended" size="15.0"/>
+        </font>
+    </ToggleButton>
+</AnchorPane>

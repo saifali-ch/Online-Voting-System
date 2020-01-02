@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+            minWidth="-Infinity"
+            prefHeight="450.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/11.0.1"
+            fx:controller="controllers.home.HomeController">
+    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #009EFA;"
+          AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <VBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="610.0" HBox.hgrow="ALWAYS">
+            <Label alignment="CENTER" prefHeight="50.0" prefWidth="700.0" text="Online Voting System v1.0"
+                   textFill="WHITE">
+                <font>
+                    <Font name="OCR A Extended" size="45.0"/>
+                </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="674.0" text="Developed by Saif Ali"
+                   textFill="WHITE" VBox.vgrow="ALWAYS"/>
+            <Label alignment="CENTER_RIGHT" layoutX="48.0" layoutY="60.0" prefHeight="30.0" prefWidth="674.0"
+                   text="SP19-BSE-036" textFill="WHITE"/>
+        </VBox>
+    </HBox>
+    <HBox alignment="CENTER" prefHeight="350.0" prefWidth="750.0" AnchorPane.topAnchor="100.0">
+        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
+            <ImageView fx:id="admin" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#loginAsAdmin"
+                       onMouseEntered="#mouseEntered" pickOnBounds="true" preserveRatio="true">
+                <Image url="@../../media/admin/admin.png"/>
+                <cursor>
+                    <Cursor fx:constant="HAND"/>
+                </cursor>
+            </ImageView>
+            <Label alignment="CENTER" prefHeight="38.0" prefWidth="204.0" text="Login as Admin" textFill="#57667c">
+                <font>
+                    <Font name="Segoe UI Black" size="26.0"/>
+                </font>
+            </Label>
+        </VBox>
+        <VBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
+            <ImageView fx:id="voter" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#loginAsVoter"
+                       onMouseEntered="#mouseEntered" pickOnBounds="true" preserveRatio="true">
+                <Image url="@../../media/voter/cast_vote.png"/>
+                <cursor>
+                    <Cursor fx:constant="HAND"/>
+                </cursor>
+            </ImageView>
+            <Label alignment="CENTER" prefHeight="38.0" prefWidth="206.0" text="Login as Voter" textFill="#57667c">
+                <font>
+                    <Font name="Segoe UI Black" size="26.0"/>
+                </font>
+            </Label>
+        </VBox>
+    </HBox>
+</AnchorPane>
