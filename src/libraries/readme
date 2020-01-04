@@ -1,3 +1,3 @@
-add all the external libraries into project module
+added all the external libraries needed into project module except JavaFX
 
-And manually download and add javafx libraries into project module
+So manually download and add javafx libraries into project module
