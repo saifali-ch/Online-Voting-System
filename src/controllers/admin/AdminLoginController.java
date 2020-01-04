@@ -39,7 +39,7 @@ public class AdminLoginController {
 
     public void fill(MouseEvent event) {
         System.out.println("Auto Fill Activated");
-        cnic.setText("3110243396671");
+        cnic.setText("3110212345");
         password.setText("12345678");
         loginBtn.fire();
     }

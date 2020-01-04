@@ -39,7 +39,7 @@ CREATE TABLE `admins` (
 --
 
 INSERT INTO `admins` (`Name`, `CNIC`, `Password`) VALUES
-('Saif Ali', '3110243396671', '12345678');
+('Saif Ali', '3110212345', '12345678');
 
 -- --------------------------------------------------------
 
